@@ -28,9 +28,14 @@ public class IntroToArrayLists {
 			System.out.println(movies.get(i));
 		}
 		//6. Print all the Strings in reverse order.
-		for( int i = 0; i < movies.size() -1; i--) {
+		for( int i = movies.size()-1; i > -1; i--) {
 			System.out.println(movies.get(i));
 		}
 		//7. Print only the Strings that have the letter 'e' in them.
+		for(String s : movies){
+			if(s.contains("e")) {
+			System.out.println(s);
+		}
+	}
 	}
 }
